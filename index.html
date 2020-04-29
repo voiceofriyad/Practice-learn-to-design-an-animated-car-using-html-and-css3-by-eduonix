@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Car</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery-3.5.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#car-body').click(function() {
+				$('body').toggleClass('pause');
+				$('#wheel-front').toggleClass('pause');
+				$('#wheel-back').toggleClass('pause');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="car-body"></div>
+		<div id="wheel-front"></div>
+		<div id="wheel-back"></div>
+	</div>
+</body>
+</html>
